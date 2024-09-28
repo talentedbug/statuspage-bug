@@ -120,13 +120,13 @@ function getStatusText(color) {
 
 function getStatusDescriptiveText(color) {
   return color == "nodata"
-    ? "No Data Available: Health check was not performed."
+    ? "没数据：那天状态页也炸了……"
     : color == "success"
-    ? "No downtime recorded on this day."
+    ? "没事：哇，啥事儿没有！"
     : color == "failure"
-    ? "Major outages recorded on this day."
+    ? "出大事：啊啊啊啊啊啊……"
     : color == "partial"
-    ? "Partial outages recorded on this day."
+    ? "有点事：好像给幺蛾子搞炸了。"
     : "Unknown";
 }
 
