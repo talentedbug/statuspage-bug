@@ -108,26 +108,26 @@ function templatizeString(text, parameters) {
 
 function getStatusText(color) {
   return color == "nodata"
-    ? "No Data Available"
+    ? "没数据"
     : color == "success"
-    ? "Fully Operational"
+    ? "没事"
     : color == "failure"
-    ? "Major Outage"
+    ? "出大事"
     : color == "partial"
-    ? "Partial Outage"
+    ? "有点事"
     : "Unknown";
 }
 
 function getStatusDescriptiveText(color) {
   return color == "nodata"
-    ? "没数据：那天状态页也炸了……"
+    ? "没数据：大概状态页也炸了……"
     : color == "success"
     ? "没事：哇，啥事儿没有！"
     : color == "failure"
     ? "出大事：啊啊啊啊啊啊……"
     : color == "partial"
     ? "有点事：好像给幺蛾子搞炸了。"
-    : "Unknown";
+    : "我不道啊……";
 }
 
 function getTooltip(key, date, quartile, color) {
