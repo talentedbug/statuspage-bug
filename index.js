@@ -122,7 +122,7 @@ function getStatusDescriptiveText(color) {
   return color == "nodata"
     ? "没数据：大概状态页也炸了……"
     : color == "success"
-    ? "没事：哇，啥事儿没有！"
+    ? "没事：哦，啥事儿没有！"
     : color == "failure"
     ? "出大事：啊啊啊啊啊啊……"
     : color == "partial"
